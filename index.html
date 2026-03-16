@@ -1,73 +1,405 @@
-{
-  "file_name": "Cronograma Autodiagnósticos 2026",
-  "sheets": [
-    {
-      "name": "Cronograma",
-      "rows": [
-        ["N°", "Autodiagnóstico", "Mes Programado", "Fecha Sugerida", "Semana", "Estado"],
-        ["1", "1.1 Gestión Talento Humano", "Enero", "2026-01-15", "Semana 3", "Pendiente"],
-        ["2", "1.2 Integridad", "Enero", "2026-01-29", "Semana 5", "Pendiente"],
-        ["3", "2.1 Dirección Planeación", "Febrero", "2026-02-12", "Semana 7", "Pendiente"],
-        ["4", "2.2 Plan Anticorrupción", "Febrero", "2026-02-26", "Semana 9", "Pendiente"],
-        ["5", "3.1 Gestión Presupuestal", "Marzo", "2026-03-12", "Semana 11", "Pendiente"],
-        ["6", "3.3 Defensa Jurídica", "Marzo", "2026-03-26", "Semana 13", "Pendiente"],
-        ["7", "3.4 Servicio al Ciudadano", "Abril", "2026-04-09", "Semana 15", "Pendiente"],
-        ["8", "3.5 Trámites", "Abril", "2026-04-23", "Semana 17", "Pendiente"],
-        ["9", "3.6 Participación Ciudadana", "Mayo", "2026-05-07", "Semana 19", "Pendiente"],
-        ["10", "3.7 Rendición de Cuentas", "Mayo", "2026-05-21", "Semana 21", "Pendiente"],
-        ["11", "4. Seguimiento y Evaluación Desempeño", "Junio", "2026-06-04", "Semana 23", "Pendiente"],
-        ["12", "5.1 Gestión Documental", "Junio", "2026-06-18", "Semana 25", "Pendiente"],
-        ["13", "5.2 Transparencia y Acceso a Información", "Julio", "2026-07-09", "Semana 28", "Pendiente"],
-        ["14", "7. Control Interno", "Julio", "2026-07-23", "Semana 30", "Pendiente"],
-        ["15", "Gestión del Conocimiento e Innovación", "Agosto", "2026-08-06", "Semana 32", "Pendiente"],
-        ["16", "Gobierno Digital (2019)", "Septiembre", "2026-09-03", "Semana 36", "Pendiente"],
-        ["17", "3.3 Autodiagnóstico Gobierno Digital", "Octubre", "2026-10-01", "Semana 40", "Pendiente"],
-        ["18", "Conflictos de Interés", "Noviembre", "2026-11-05", "Semana 45", "Pendiente"]
-      ]
-    },
-    {
-      "name": "Vista Mensual",
-      "rows": [
-        ["Mes", "Cantidad Reuniones", "Autodiagnósticos Programados"],
-        ["Enero", "2", "Gestión Talento Humano, Integridad"],
-        ["Febrero", "2", "Dirección Planeación, Plan Anticorrupción"],
-        ["Marzo", "2", "Gestión Presupuestal, Defensa Jurídica"],
-        ["Abril", "2", "Servicio al Ciudadano, Trámites"],
-        ["Mayo", "2", "Participación Ciudadana, Rendición de Cuentas"],
-        ["Junio", "2", "Seguimiento y Evaluación Desempeño, Gestión Documental"],
-        ["Julio", "2", "Transparencia y Acceso a Información, Control Interno"],
-        ["Agosto", "1", "Gestión del Conocimiento e Innovación"],
-        ["Septiembre", "1", "Gobierno Digital (2019)"],
-        ["Octubre", "1", "Autodiagnóstico Gobierno Digital"],
-        ["Noviembre", "1", "Conflictos de Interés"],
-        ["Diciembre", "0", "Cierre y consolidación de resultados"],
-        ["", "", ""],
-        ["TOTAL REUNIONES", "18", ""]
-      ]
-    },
-    {
-      "name": "Preparación",
-      "rows": [
-        ["Autodiagnóstico", "Responsable", "Documentos Requeridos", "Tiempo Estimado"],
-        ["Gestión Talento Humano", "", "Políticas RH, indicadores personal", "2 horas"],
-        ["Integridad", "", "Código ética, casos reportados", "2 horas"],
-        ["Dirección Planeación", "", "Plan estratégico, POA", "2.5 horas"],
-        ["Plan Anticorrupción", "", "Mapa riesgos, acciones preventivas", "2 horas"],
-        ["Gestión Presupuestal", "", "Ejecución presupuestal, reportes", "2.5 horas"],
-        ["Defensa Jurídica", "", "Procesos judiciales, estrategias", "2 horas"],
-        ["Servicio al Ciudadano", "", "PQRS, encuestas satisfacción", "2 horas"],
-        ["Trámites", "", "Inventario trámites, tiempos", "2 horas"],
-        ["Participación Ciudadana", "", "Mecanismos participación, actas", "2 horas"],
-        ["Rendición de Cuentas", "", "Informes gestión, audiencias", "2.5 horas"],
-        ["Seguimiento y Evaluación Desempeño", "", "Indicadores, evaluaciones", "2.5 horas"],
-        ["Gestión Documental", "", "TRD, inventarios documentales", "2 horas"],
-        ["Transparencia y Acceso a Información", "", "Solicitudes info, publicaciones", "2 horas"],
-        ["Control Interno", "", "MECI, auditorías, hallazgos", "3 horas"],
-        ["Gestión del Conocimiento e Innovación", "", "Proyectos innovación, lecciones aprendidas", "2 horas"],
-        ["Gobierno Digital (2019)", "", "Plataformas digitales, servicios en línea", "2 horas"],
-        ["Autodiagnóstico Gobierno Digital", "", "Madurez digital, TIC", "2 horas"],
-        ["Conflictos de Interés", "", "Declaraciones, casos identificados", "2 horas"]
-      ]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma Autodiagnósticos 2026</title>
+  <style>
+    :root {
+      /* Paleta en verdes (inspirada en verdes de Material Design) */
+      --bg: #e8f5e9;            /* verde muy claro de fondo [web:25] */
+      --card-bg: #ffffff;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --primary: #2e7d32;       /* verde principal [web:25] */
+      --accent1: #4caf50;       /* verde medio [web:25] */
+      --accent2: #66bb6a;       /* verde claro [web:25] */
+      --accent3: #388e3c;       /* verde más oscuro [web:25] */
+      --accent4: #81c784;       /* verde suave [web:25] */
+      --accent5: #43a047;       /* verde intenso [web:25] */
+      --accent6: #1b5e20;       /* verde muy oscuro [web:25] */
+      --text: #1b5e20;          /* texto en verde oscuro [web:25] */
+      --text-light: #558b2f;    /* texto secundario verdoso [web:25] */
+      --border: #c8e6c9;        /* borde suave verde claro [web:25] */
     }
-  ]
-}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .legend-item {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 1rem;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .legend-item-1 { background-color: var(--accent1); }
+    .legend-item-2 { background-color: var(--accent2); }
+    .legend-item-3 { background-color: var(--accent3); }
+    .legend-item-4 { background-color: var(--accent4); }
+    .legend-item-5 { background-color: var(--accent5); }
+    .legend-item-6 { background-color: var(--accent6); }
+
+    .timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(
+        to bottom,
+        var(--accent1) 0%,
+        var(--accent2) 20%,
+        var(--accent3) 40%,
+        var(--accent4) 60%,
+        var(--accent5) 80%,
+        var(--accent6) 100%
+      );
+      border-radius: 2px;
+    }
+
+    .tl-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .tl-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 4px solid #f1f8e9;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+      margin-left: 18px;
+    }
+
+    .tl-dot-1 { background-color: var(--accent1); }
+    .tl-dot-2 { background-color: var(--accent2); }
+    .tl-dot-3 { background-color: var(--accent3); }
+    .tl-dot-4 { background-color: var(--accent4); }
+    .tl-dot-5 { background-color: var(--accent5); }
+    .tl-dot-6 { background-color: var(--accent6); }
+
+    .tl-content {
+      background: var(--card-bg);
+      padding: 1rem 1.3rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      width: 100%;
+      border-left: 4px solid var(--accent1);
+    }
+
+    .tl-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      padding-left: 0.7rem;
+      border-left: 4px solid var(--accent3);
+      color: var(--primary);
+    }
+
+    .tl-info {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .tl-date {
+      font-size: 0.9rem;
+      color: var(--primary);
+      background: #dcedc8;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 0.2rem;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 10px;
+      }
+
+      .tl-dot {
+        margin-left: 0;
+      }
+
+      .tl-item {
+        flex-direction: column;
+      }
+
+      .tl-dot {
+        align-self: flex-start;
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CRONOGRAMA DE AUTODIAGNÓSTICOS 2026</h1>
+      <p class="subtitle">Reuniones programadas de autodiagnóstico organizacional</p>
+    </header>
+
+    <div class="legend">
+      <div class="legend-item legend-item-1">Gestión interna & planeación</div>
+      <div class="legend-item legend-item-2">Ética, integridad & anticorrupción</div>
+      <div class="legend-item legend-item-3">Presupuesto, legal & ciudadano</div>
+      <div class="legend-item legend-item-4">Trámites, participación & rendición</div>
+      <div class="legend-item legend-item-5">Control interno, gestión documental & información</div>
+      <div class="legend-item legend-item-6">Desempeño, innovación, gobierno digital & conflictos</div>
+    </div>
+
+    <div class="timeline">
+      <!-- 1 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-1"></div>
+        <div class="tl-content">
+          <div class="tl-label">1.1 Gestión Talento Humano</div>
+          <div class="tl-info">Evaluación de políticas de talento humano, indicadores de gestión del personal y clima organizacional.</div>
+          <div class="tl-date">15 de enero de 2026</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-2"></div>
+        <div class="tl-content">
+          <div class="tl-label">1.2 Integridad</div>
+          <div class="tl-info">Autodiagnóstico en ética, conducta y cumplimiento de normas de integridad institucional.</div>
+          <div class="tl-date">29 de enero de 2026</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-1"></div>
+        <div class="tl-content">
+          <div class="tl-label">2.1 Dirección Planeación</div>
+          <div class="tl-info">Evaluación del plan estratégico, planeación institucional y seguimiento de metas.</div>
+          <div class="tl-date">12 de febrero de 2026</div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-2"></div>
+        <div class="tl-content">
+          <div class="tl-label">2.2 Plan Anticorrupción</div>
+          <div class="tl-info">Análisis de medidas preventivas, riesgos de corrupción y acciones de control.</div>
+          <div class="tl-date">26 de febrero de 2026</div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-3"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.1 Gestión Presupuestal</div>
+          <div class="tl-info">Evaluación de la ejecución presupuestal, reportes y eficiencia en el uso de recursos.</div>
+          <div class="tl-date">12 de marzo de 2026</div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-3"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.3 Defensa Jurídica</div>
+          <div class="tl-info">Revisión de procesos judiciales, estrategias de defensa y gestión de riesgos legales.</div>
+          <div class="tl-date">26 de marzo de 2026</div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-3"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.4 Servicio al Ciudadano</div>
+          <div class="tl-info">Evaluación de PQRS, canales de atención y satisfacción ciudadana.</div>
+          <div class="tl-date">9 de abril de 2026</div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-4"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.5 Trámites</div>
+          <div class="tl-info">Inventario de trámites, tiempos de respuesta y oportunidades de mejora en procesos.</div>
+          <div class="tl-date">23 de abril de 2026</div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-4"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.6 Participación Ciudadana</div>
+          <div class="tl-info">Evaluación de mecanismos de participación, convocatorias y actas de participación.</div>
+          <div class="tl-date">7 de mayo de 2026</div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-4"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.7 Rendición de Cuentas</div>
+          <div class="tl-info">Análisis de informes de gestión, audiencias públicas y divulgación de resultados.</div>
+          <div class="tl-date">21 de mayo de 2026</div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-6"></div>
+        <div class="tl-content">
+          <div class="tl-label">4. Seguimiento y Evaluación Desempeño</div>
+          <div class="tl-info">Verificación de indicadores de desempeño y procesos de evaluación institucional.</div>
+          <div class="tl-date">4 de junio de 2026</div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-5"></div>
+        <div class="tl-content">
+          <div class="tl-label">5.1 Gestión Documental</div>
+          <div class="tl-info">Revisión de TRD, inventarios documentales y buenas prácticas en gestión documental.</div>
+          <div class="tl-date">18 de junio de 2026</div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-5"></div>
+        <div class="tl-content">
+          <div class="tl-label">5.2 Transparencia y Acceso a Información</div>
+          <div class="tl-info">Evaluación de solicitudes de información, publicaciones y cumplimiento de normas de transparencia.</div>
+          <div class="tl-date">9 de julio de 2026</div>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-5"></div>
+        <div class="tl-content">
+          <div class="tl-label">7. Control Interno</div>
+          <div class="tl-info">Análisis de controles internos, hallazgos de auditoría y cumplimiento de MECI.</div>
+          <div class="tl-date">23 de julio de 2026</div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-6"></div>
+        <div class="tl-content">
+          <div class="tl-label">Gestión del Conocimiento e Innovación</div>
+          <div class="tl-info">Revisión de proyectos de innovación, lecciones aprendidas y gestión del conocimiento.</div>
+          <div class="tl-date">6 de agosto de 2026</div>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-6"></div>
+        <div class="tl-content">
+          <div class="tl-label">Gobierno Digital (2019)</div>
+          <div class="tl-info">Evaluación de plataformas digitales y servicios en línea ofrecidos por la entidad.</div>
+          <div class="tl-date">3 de septiembre de 2026</div>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-6"></div>
+        <div class="tl-content">
+          <div class="tl-label">3.3 Autodiagnóstico Gobierno Digital</div>
+          <div class="tl-info">Análisis de madurez digital, uso de TIC y alineación con políticas de gobierno digital.</div>
+          <div class="tl-date">1 de octubre de 2026</div>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-6"></div>
+        <div class="tl-content">
+          <div class="tl-label">Conflictos de Interés</div>
+          <div class="tl-info">Evaluación de declaraciones, procesos de prevención y manejo de conflictos de interés.</div>
+          <div class="tl-date">5 de noviembre de 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Cronograma de reuniones de autodiagnóstico 2026.<br>
+      Total: 18 reuniones programadas entre enero y noviembre.
+    </footer>
+  </div>
+</body>
+</html>
+
